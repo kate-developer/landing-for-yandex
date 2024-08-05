@@ -1,0 +1,106 @@
+.game-session {
+}
+
+.game-session__row {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  gap: 44px;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.game-session__img {
+  position: relative;
+  max-width: 474px;
+  width: 100%;
+  height: 527px;
+
+  @include mobile {
+    height: 402px;
+  }
+}
+
+.game-session__img img {
+  position: absolute;
+  top: -34px;
+
+  @include mobile {
+    height: 402px;
+  }
+}
+
+.game-session__timetable {
+}
+
+.game-session__title {
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 44px;
+  }
+}
+
+.game-session__table {
+  margin-bottom: 48px;
+  font-size: 20px;
+  line-height: 120%;
+  @include mobile {
+    display: none;
+  }
+}
+
+.game-session__table-mobile {
+  display: none;
+  @include mobile {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.cell-name {
+  padding: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  border-right: 2px solid #d0d0d0;
+
+  @include mobile {
+    border-right: none;
+  }
+}
+
+.cell-name-mobile {
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.cell-text {
+  padding: 16px;
+  font-weight: 600;
+}
+
+td {
+  border-bottom: 2px solid #d0d0d0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.game-session__link {
+  font-size: 20px;
+
+  @include mobile {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--btn-color);
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+}

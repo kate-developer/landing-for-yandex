@@ -1,0 +1,32 @@
+.running-line {
+  background-color: var(--accent);
+}
+
+.running-line__text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+
+  padding: 18px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling {
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+  display: inline-block;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

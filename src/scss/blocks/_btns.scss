@@ -1,0 +1,65 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+
+  border-radius: 66px;
+  padding: 20px 49px;
+  width: 263px;
+  height: 72px;
+
+  transition: all 0.2s ease-in;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.btn-black {
+  background: #1f1f1f;
+  color: #fff;
+
+  &:hover {
+    background: #fbce51;
+    color: var(--text-color);
+  }
+}
+
+.btn-white {
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+
+  &:hover {
+    background: var(--text-color);
+    color: #fff;
+  }
+
+  @include tablet {
+    background: #fff;
+  }
+}
+
+.players__btn {
+  width: 48px;
+  height: 44px;
+
+  border-radius: 100%;
+  background: var(--text-color);
+  text-align: center;
+}
+
+.btn-card-player {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #3057a2;
+
+  border: 1px solid #3057a2;
+  border-radius: 62px;
+  padding: 12px;
+}

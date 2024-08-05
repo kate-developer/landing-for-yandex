@@ -1,0 +1,23 @@
+:root {
+  --container-width: 1366px;
+  --container-padding: 72px;
+
+  --font-family: "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+
+  --font-titles: var(--font-accent);
+
+  --page-bg: #fff;
+  --text-color: #313131;
+  --accent: #f54932;
+  --btn-color: #3057a2;
+
+  // --laptop-size: 1199px;
+  --tablet-size: 1199px;
+  --mobile-size: 635px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

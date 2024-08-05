@@ -1,0 +1,55 @@
+.title-1 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.title-2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 36px;
+    line-height: 110%;
+  }
+}
+
+.title-3 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 135%;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
+.title-3-red {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.title-4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.text-link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--btn-color);
+}
